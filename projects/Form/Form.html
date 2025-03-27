@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="form.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <main>
+        <fieldset>
+            <legend>Register</legend>
+            <!-- Added novalidate to handle validation with JS if needed -->
+            <form novalidate>
+                <div class="form-group">
+                    <label for="name" class="sr-only">Name</label>
+                    <div class="input-field">
+                        <i class="fa fa-user" aria-hidden="true"></i> <!-- Added aria-hidden -->
+                        <input type="text" id="name" placeholder="Name" name="name" required autocomplete="name"> <!-- Added autocomplete -->
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="password" class="sr-only">password</label>
+                    <div class="input-field">
+                        <i class="fa fa-lock" aria-hidden="true"></i>
+                        <input type="password" id="password" placeholder="Password" name="password" required autocomplete="new-password">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="email" class="sr-only">Email</label>
+                    <div class="input-field">
+                        <i class="fa fa-envelope" aria-hidden="true"></i>
+                        <input type="email" id="email" placeholder="E-mail" name="email" required autocomplete="email">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="dob" class="sr-only">Date of birth</label>
+                    <div class="input-field">
+                        <i class="fa fa-calendar" aria-hidden="true"></i>
+                        <input type="date" id="dob" name="dob" autocomplete="bday">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="gender" class="sr-only">Gender</label>
+                    <div class="input-field">
+                        <i class="fa fa-venus-mars" aria-hidden="true"></i>
+                        <select id="gender" name="gender">
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="btn-pos">
+                    <button type="submit" class="btn">Submit</button>
+                </div>
+            </form>
+        </fieldset>
+    </main>
+</body>
+</html>

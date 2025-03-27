@@ -1,0 +1,3 @@
+[submodule "projects/hotel"]
+	path = projects/hotel
+	url = https://github.com/supranjal/hotel.git

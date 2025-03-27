@@ -1,0 +1,132 @@
+body{
+    display: flex;
+    background-image: url('./imgs/background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;/* this property made the form go in the middle */
+    margin: 0; /* Added to remove default margin */
+}
+
+/* Improved form container with more appropriate shadow and better spacing */
+form {
+    background-color: #f5f5f5;
+    width: 100%; /* takes the entire width available */
+    max-width: 500px; /* Slightly increased width for better content fit */
+    padding: 30px; /* Increased padding for equal spacing inside */
+    border-radius: 10px; /* Slightly increased border radius for smoother edges */
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15); /* Adjusted shadow for better appearance */
+    margin: 0 auto;/* Centers the form horizontally using auto margins */
+}
+
+.form-group{
+    margin-bottom: 1.25rem; /* made gap between form's element like the name,password */
+    width: 100%;
+    display: flex; /* made the element inside form look neat by making it a container */
+    transition: all 0.3s ease;/* This transition applies a smooth animation effect to all properties, 
+    lasting 0.3 seconds with an ease timing function. */
+}
+
+/* Optimized input field styling with better shadows */
+.input-field{
+    /* display: flex; for all the input field of the form like the name password and all */
+    /* align-items: center; */
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    overflow: hidden;
+    padding: 12px; /* Slightly increased padding for better touch targets */
+    /* margin-top: 5px; */
+    background-color: white;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Fixed shadow syntax */
+    transition: all 0.3s ease;
+}
+
+.input-field i{
+    margin-right: 10px; /* to take the icon slightly to right from the placeholder or label if present */
+    color: #666;
+    width: 16px;/* made same width for all icon */
+    text-align: center;
+}
+
+/* Added font-family to ensure consistent fonts */
+.input-field input,.input-field select{
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 16px;
+    font-family: inherit; /* Added to ensure consistent font */
+    flex: 1;
+    color: #3a3a3a; /* Moved from the input select rule below */
+}
+
+/* Better button styling with width adjustment */
+.btn {
+    background-color: #5c6bc0;
+    color: white;
+    padding: 12px 24px; /* Increased padding for better touch target */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600; /* Added for better emphasis */
+    transition: background-color 0.3s ease;
+    margin: 0 auto;
+}
+
+.btn:hover {
+    background-color: #7e88d1;
+    transform: translateY(-1px); /* Added subtle lift effect on hover */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Added shadow on hover */
+}
+
+.btn-pos {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px; /* Added space above button container */
+}
+
+/* Combined these selectors with the input styles above */
+input::placeholder{
+    color: #a9a9a9; 
+}
+
+/* Improved fieldset and legend styling */
+fieldset{
+    border: none;
+    padding: 0;
+    margin: 0;
+    width: 100%; /* Added to ensure proper sizing */
+}
+
+legend{
+    text-align: center;
+    font-size: 28px; /* Increased for better visual hierarchy */
+    font-weight: 600;
+    color: #333;
+    padding: 0 10px;
+    margin-bottom: 25px; /* Increased spacing below heading */
+    width: 100%; /* made it take entire width and made it look like it went to center */
+}
+
+/* Enhanced focus state */
+.input-field:focus-within{
+    border-color: #4a90e2;/* whenever a particular input field is selected it changes the color to blur and makes box shadow */
+    box-shadow: 0 0 8px rgba(74, 144, 226, 0.4); /* Enhanced focus effect */
+    transform: translateY(-1px); /* Subtle lift effect */
+}
+
+/* Added responsive adjustments for smaller screens */
+@media (max-width: 480px) {
+    form {
+        max-width: 90%;
+        padding: 15px;
+    }
+    
+    legend {
+        font-size: 24px;
+    }
+}

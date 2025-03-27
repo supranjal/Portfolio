@@ -1,3 +1,6 @@
 [submodule "projects/Hotel"]
 	path = projects/Hotel
 	url = https://github.com/supranjal/hotel.git
+[submodule "projects/Form"]
+	path = projects/Form
+	url = https://github.com/supranjal/Minimalist-Form.git

@@ -1,0 +1,9 @@
+body{
+    background-color: #34353A;
+}
+.nav{
+    background-color: #E4E6EB;
+}
+.nav-links{
+    display: flex;
+}

@@ -100,7 +100,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-right: 0; /* Reset margin for better balance */
+    margin-right: 0; /*  margin for better balance */
 }
 
 .dwn-btn {
@@ -246,7 +246,7 @@ body {
     content: "";
     position: absolute;
     width: 2px;
-    height: 40px; /* Shorter line */
+    height: 40px; 
     top: -50px;
     left: 50%;
     transform: translateX(-50%);
@@ -257,7 +257,7 @@ body {
     content: "";
     position: absolute;
     width: 2px;
-    height: 40px; /* Shorter line */
+    height: 40px;
     bottom: -50px;
     left: 50%;
     transform: translateX(-50%);

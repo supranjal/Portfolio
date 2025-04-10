@@ -1,0 +1,17 @@
+:root {
+  /* Color palette */
+  --primary-color: #34353A;
+  --secondary-color: #E63946;
+  --accent-color: #ff6b6b;
+  --text-color: #C5C6C7;
+  
+  
+  /* Typography */
+  --font-primary: 'Poppins', sans-serif;
+  --font-secondary: 'Playfair Display', serif;
+  --font-hindi: 'Hind', sans-serif;
+  
+  
+ 
+  
+}

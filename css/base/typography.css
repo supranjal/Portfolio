@@ -1,0 +1,31 @@
+/* Typography styles */
+.sanskrit {
+    font-family: var(--font-hindi);
+    font-weight: bold;
+    color: var(--accent-color);
+    margin-right: 20px;
+    letter-spacing: 1px; /* More elegant letter spacing */
+}
+
+.name {
+    font-size: 56px; /* Slightly smaller for better balance */
+    margin-bottom: 15px; /* Adds space after name */
+    letter-spacing: -0.5px; /* Tighter letter spacing for modern look */
+    padding-top: 8px; /* Better vertical alignment with Sanskrit text */
+}
+
+.slogan {
+    align-self: flex-start;
+    font-weight: bold;
+    line-height: 1.4; /* Improved line height for better readability */
+}
+
+.quote{
+    font-style: italic;
+    color: #8b8b8b;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-left: 4px solid var(--accent-color);
+    margin: 20px 0;
+    border-right: 4px solid var(--accent-color);
+}

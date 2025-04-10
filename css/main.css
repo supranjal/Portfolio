@@ -1,0 +1,8 @@
+/* Import all CSS files */
+@import 'base/reset.css';
+@import 'base/typography.css';
+@import 'base/variables.css';
+@import 'components/navigation.css';
+@import 'components/hero.css';
+@import 'components/social.css';
+/* Add more component imports as you develop your site */

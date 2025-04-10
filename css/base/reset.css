@@ -1,0 +1,19 @@
+/* Font imports */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap'); /* imported from google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Hind:wght@400;700&display=swap'); /* for devnagari font */
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:wght@400;700&display=swap');/* for the hero section font */
+
+
+*, *::before, *::after {/* Apply box-sizing to all elements and their pseudo-elements to include padding and border in the element's total width and height */
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+}
+
+
+body {
+    background-color: var(--primary-color);
+}

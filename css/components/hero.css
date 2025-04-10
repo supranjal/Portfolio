@@ -1,0 +1,75 @@
+/* Hero section styles */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: var(--font-secondary);
+    font-size: 28px;
+    height: 100vh;
+    padding: 0 8%;
+    margin-top: 70px; /* Account for fixed navigation */
+    gap: 5%; /* Add proper spacing between content and image */
+    min-height: calc(100vh - 70px); /* Full viewport height minus nav */
+    position: relative; /* Needed for social icons positioning */
+}
+
+
+.hero-content {
+    width: 45%; /* Slightly smaller for more whitespace */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color: var(--text-color);
+    margin-right: 2%; /* Add slight margin for better visual separation */
+    padding-bottom: 5%; /* Add extra padding at the bottom to balance the layout */
+}
+
+
+
+.cta-button {
+    border: var(--accent-color) 2px solid;/* Thinner border looks more modern */
+    background-color: transparent;
+    color: var(--accent-color);
+    padding: 10px 24px; /* More balanced padding */
+    font-size: 16px;
+    border-radius: 6px; /* Slightly less rounded */
+    margin-top: 20px;
+    align-self: flex-start;
+    cursor: pointer;
+    transition: all 0.3s ease; /* Smooth transition for all properties */
+}
+
+.cta-button:hover {
+    background-color: #ff6b6b; /* Fill background on hover */
+    color: #34353A; /* Change text color for better contrast */
+    transform: translateY(-3px); /* Slight lift effect */
+}
+
+.hero-image {
+    width: 40%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: visible;
+    position: relative;
+    padding: 15px;
+    background-color: rgba(60, 61, 66, 0.4); /* Slightly lighter than body background */
+    border-radius: 12px;
+    box-shadow: 
+        0 20px 30px rgba(0, 0, 0, 0.3),
+        0 5px 10px rgba(0, 0, 0, 0.2);
+    margin-top: 10px; /* Slight adjustment for vertical balance */
+    transition: all 0.5s ease;
+}
+
+.hero-image img {
+    object-fit: cover;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(230, 57, 70, 0.15); /* Red-tinted shadow */
+    transition: all 0.5s ease;
+    transform: translateZ(20px); /* Create depth effect */
+}

@@ -1,0 +1,46 @@
+/* Social icons styles */
+.social-icons {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* More space between icons */
+    position: absolute; /* Position relative to hero section */
+    right: 3%; /* Position consistently from edge */
+    top: 50%; /* Center vertically */
+    transform: translateY(-50%); /* Perfect centering */
+    z-index: 100; /* Ensure visibility */
+}
+
+.social-icons i {
+    color: white;
+    font-size: 22px;
+    transition: all 0.2s ease-in-out;
+    opacity: 0.7; /* Start slightly faded */
+}
+
+.social-icons i:hover {
+    color: var(--secondary-color);
+    transform: scale(1.2);
+    opacity: 1; /* Full opacity on hover */
+}
+
+.social-icons::after {
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 40px; 
+    top: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: linear-gradient(to bottom, transparent, var(--secondary-color));
+}
+
+.social-icons::before {
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 40px;
+    bottom: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: linear-gradient(to top, transparent, var(--secondary-color));
+}

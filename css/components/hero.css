@@ -11,6 +11,8 @@
     gap: 5%; /* Add proper spacing between content and image */
     min-height: calc(100vh - 70px); /* Full viewport height minus nav */
     position: relative; /* Needed for social icons positioning */
+    box-shadow: 0 0 40px rgba(255, 255, 255, 0.05);
+
 }
 
 

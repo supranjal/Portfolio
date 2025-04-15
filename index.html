@@ -10,7 +10,7 @@
 </head>
 <body>
   <!-- nav bar and the hero section -->
-  <header>
+  <header id="home">
     <nav class="nav">
       <div class="logo">
         <a href="index.html"><img src="./imgs/l.png" alt="Supranjal-logo"></a>
@@ -80,7 +80,34 @@
       </div>
     </section>
   </main>
-  <!-- use projects folder name only donot specify index file in the href section of the project -->
+  <!-- project section -->
+  <section class="projects" id="projects">
+    <h2>Projects</h2>
+    <div class="project-grid"> <!-- this is grid layout for the card -->
+      <!-- card 1 -->
+      <div class="project-card"><!-- this is container for individual project card -->
+        <div class="card-front"><!-- front section of the card -->
+          <img src="./imgs/form.jpg" alt="form project" class="project-image">
+          <h3 class="project-title">Minimalist Form</h3>
+        </div>
+        <div class="card-back">
+          <p class="project-description">A minimalist and responsive form design showcasing clean UI and user-friendly interaction.Build just using HTML&CSS.</p>
+          <a href="./projects/Form/" class="visit-btn" target="_blank">Visit Site</a>
+        </div>
+      </div>
+      <!-- card 2 -->
+      <div class="project-card"><!--container for the card -->
+        <div class="card-front"><!-- conatins the front info -->
+          <img src="./imgs/jade.jpg" alt="jade hotel" class="project-image">
+          <h3 class="project-title">Hotel Landing Page</h3>
+        </div>
+        <div class="card-back">
+          <p class="project-description">A visually appealing hotel landing page designed to attract visitors with its elegant layout and responsive design.Build using Bootstrap.</p>
+          <a href="./projects/Hotel/" class="visit-btn" target="_blank">Visit Site</a>
+        </div>
+      </div>
+    </div>
+  </section>
   <script>
     document.querySelectorAll('.sanskrit').forEach(element => {
   const originalText = element.textContent;

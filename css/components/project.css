@@ -1,0 +1,117 @@
+.projects{ /* adjusted the padding to keep it in the same line as above element */
+    padding-top: 60px;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+.projects > h2{
+    font-family: var(--font-primary);
+    font-size: 42px; 
+    font-weight: 700;
+    color: var(--secondary-color); 
+    text-align: center;
+}
+.project-grid{/* choose grid layout for responsiveness */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+    width: 100%;
+    margin: 40px auto;
+}
+.project-image{
+    height:auto;
+    width: 100%;
+    object-fit: cover;
+
+}
+.project-card{
+    position: relative;/* because the front and back changes relative postion to the card div */
+    height: 350px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    background-color:#3a3a3a; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
+}
+.card-front{
+    width: 100%;
+    height: 100%;
+    transition: filter 0.4s ease; /* to make it blur  when hovered */
+}
+.card-back{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent black background for the back of the card */
+    opacity: 0; /* Initially hide the back of the card */
+    transition: opacity 0.4s ease; /* Smooth fade-in effect for the back of the card */
+}
+.project-card:hover .card-front{
+    filter:blur(5px);
+}
+.project-card:hover .card-back{
+    opacity: 1;/* hover garey c deykha vanya back ko content */
+}
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
+}
+.project-description{
+    color: white;
+    text-align: center;
+    font-family: var(--font-inter);
+    margin-bottom: 25px;
+    line-height: 1.6;
+    font-size: 16px;
+    max-width: 90%;
+    opacity: 0;/* initially hide gar yo pani */
+    transform: translateY(20px); /* Initially move the description downwards */
+    transition: all 0.5s ease;
+    transition-delay: 0.1s;
+}
+
+.visit-btn{
+    display: inline-block;
+    padding: 12px 28px;
+    border-radius: 50px;
+    background-color: var(--secondary-color);
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    transform: translateY(20px);/* initially move it downward */
+    opacity: 0;/* initially not visible */
+    transition: all 0.4s ease;
+    transition-delay: 0.2s;
+    position: relative;
+    z-index: 10;/* to make the hover effect on the button visible  */
+}
+
+.visit-btn:hover{
+    transform: translateY(0) scale(1.08);
+    background-color: #ff4757; 
+    cursor: pointer;
+    font-weight: 600;
+    box-shadow: 0 6px 20px rgba(230, 57, 70, 0.5);
+}
+
+.project-card:hover .project-description,.project-card:hover .visit-btn{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.project-title{
+    margin-top: 15px;
+    margin-bottom: 5px;
+    text-align: center;
+    font-family: var(--font-primary);
+    color:  #ff4757;
+    font-size: 20px;
+    font-weight: 600;
+}

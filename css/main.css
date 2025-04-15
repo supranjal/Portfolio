@@ -7,4 +7,5 @@
 @import 'components/social.css';
 @import 'components/about.css';
 @import 'components/skill.css';
+@import url(components/project.css);
 /* Add more component imports as you develop your site */

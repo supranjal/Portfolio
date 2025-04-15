@@ -100,7 +100,7 @@
 
 .dwn-btn:hover {
     transform: scale(1.2);
-    background-color: var(--secondary-color);
+    background-color:  #ff4757;
     cursor: pointer;
     font-weight: 600;
     box-shadow: 0 6px 20px rgba(230, 57, 70, 0.4);

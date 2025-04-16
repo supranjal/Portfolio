@@ -33,7 +33,7 @@
   <main>
     <section class="hero">
       <div class="hero-content">
-        <h1><span class="sanskrit" data-hover-text="I'm">अहम्</span><span class="name">Supranjal Khadka</span></h1>
+        <h1><span class="sanskrit">अहम्</span><span class="name">Supranjal Khadka</span></h1>
         <p class="slogan">Aspiring Full Stack developer <img src="./imgs/icons8-coder-60.png" alt="coder"></p> 
         <p class="quote"> <em>"Shaping ideas into code"</em> </p>
         <a href="#contact" ><button class="cta-button">Contact me</button></a>
@@ -132,20 +132,5 @@
     <p>Thanks for scrolling!</p>
     <p>&copy; 2025 Supranjal Khadka. All rights reserved.</p>
   </footer>
-  
-  <script>
-    document.querySelectorAll('.sanskrit').forEach(element => {
-      const originalText = element.textContent;
-      const hoverText = element.getAttribute('data-hover-text');
-      
-      element.addEventListener('mouseenter', () => {
-        element.textContent = hoverText;
-      });
-      
-      element.addEventListener('mouseleave', () => {
-        element.textContent = originalText;
-      });
-    });
-  </script>
 </body>
 </html>

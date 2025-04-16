@@ -26,7 +26,10 @@
     margin-right: 2%; /* Add slight margin for better visual separation */
     padding-bottom: 5%; /* Add extra padding at the bottom to balance the layout */
 }
-
+.hero-content img{
+    height: 34px;
+    width: 34px;
+}
 
 
 .cta-button {

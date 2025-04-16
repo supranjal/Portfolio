@@ -14,6 +14,7 @@
       <div class="logo">
         <a href="index.html"><img src="./imgs/l.png" alt="Supranjal-logo"></a>
       </div>
+      <div class="menu-toggle" id="menuToggle"></div>
       <div class="nav-links">
         <ul>
           <li><a href="#home">Home</a></li>
@@ -132,5 +133,26 @@
     <p>Thanks for scrolling!</p>
     <p>&copy; 2025 Supranjal Khadka. All rights reserved.</p>
   </footer>
+  <script>
+    // Simple toggle for mobile menu
+    document.addEventListener('DOMContentLoaded', function() {
+      const menuToggle = document.getElementById('menuToggle');
+      const nav = document.querySelector('.nav');
+      
+      menuToggle.addEventListener('click', function() {
+        nav.classList.toggle('expanded');
+        menuToggle.classList.toggle('active');
+      });
+      
+      // Close menu when clicking a link
+      const navLinks = document.querySelectorAll('.nav-links a');
+      navLinks.forEach(link => {
+        link.addEventListener('click', function() {
+          nav.classList.remove('expanded');
+          menuToggle.classList.remove('active');
+        });
+      });
+    });
+  </script>
 </body>
 </html>

@@ -79,7 +79,7 @@
 .social-links img{
     height: 42px;
     width: 42px;
-    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275); /* Smoother bounce effect */
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275); /* Smoother bounce effect applied*/
     border-radius: 12px; /* Slightly rounded corners */
     background-color: rgba(255, 255, 255, 0.03); /* Very subtle background */
     padding: 5px;

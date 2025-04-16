@@ -1,0 +1,118 @@
+.contact{
+    padding-top: 60px;
+
+}
+
+.ctn{
+    text-align: center;
+    color: var(--secondary-color);
+    font-family: var(--font-primary);
+    font-size: 42px;
+    font-weight: 700;
+    position: relative;
+    
+  
+}
+.ctn::before{
+    content: "";
+    height: 3px;
+    width: 40%;
+    left: 0;
+    top: 0.7em;
+    background-color: #E63946 ;
+    position: absolute;
+    
+}
+.ctn::after{
+    content: "";
+    height: 3px;
+    width: 40%;
+    right: 0;
+    top: 0.7em;
+    background-color: #E63946 ;
+    position: absolute;
+}
+
+.contact-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 50px;
+}
+.contact-item{
+    background-color: #3d3c3c; 
+    margin-top: 30px;
+    padding: 20px 40px;
+    max-width: 300px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px; /* Gap between image and text */
+    flex: 1;/* making the div of equal width regardless of the content */
+    border-radius: 12px;
+    transition: transform 0.3s ease;
+}
+
+.contact-item:hover {
+    transform: translateY(-5px);
+}
+
+.contact-item img {
+    width: 32px;
+    height: 32px;
+}
+
+.contact-text{
+    font-family: var(--font-inter);
+    color: var(--secondary-color);
+    font-weight: 600;
+    font-size: 15px;
+}
+.social-links{
+    display: flex;
+    gap: 23px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.social-links i{
+    color: white;
+    font-size: 30px;
+    transition: all 0.2s ease-in-out;
+    opacity: 0.7; /* Start slightly faded */
+}
+.social-links i:hover {
+    color: var(--secondary-color);
+    transform: scale(1.2);
+    opacity: 1; /* Full opacity on hover */
+}
+.social-links::before{
+    content:"";
+    position: absolute;
+    background-color: #E63946;
+    height: 3px;
+    width: 40%;
+    left: 0;
+    top: 0.7em;
+}
+.social-links::after{
+    content:"";
+    position: absolute;
+    background-color: #E63946;
+    height: 3px;
+    width: 40%;
+    top: 0.7em;
+    right: 0;
+}
+.footer-section {
+    background-color: #1d1d1d;
+    padding: 20px ;
+    text-align: center;
+    color: #f1f1f1;
+    font-family: var(--font-primary);
+    font-size: 14px;
+    margin-top: 40px;
+}
+
+

@@ -87,3 +87,126 @@
         0 10px 15px rgba(0, 0, 0, 0.3),
         0 0 20px rgba(230, 57, 70, 0.2);
 }
+
+/* Hero Section Responsive Styles */
+@media screen and (max-width: 1200px) {
+    /* Button adjustments */
+    .dwn-btn {
+        padding: 11px 28px;
+        font-size: 14px;
+        margin-right: 5px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    /* Hero section */
+    .hero {
+        flex-direction: column;
+        height: auto;
+        padding: 120px 5% 80px;
+        text-align: center;
+    }
+    
+    .hero-content {
+        width: 90%;
+        margin: 0 auto 40px;
+        align-items: center;
+    }
+    
+    .sanskrit {
+        margin-right: 0;
+        display: block;
+        margin-bottom: 10px;
+    }
+    
+    .name {
+        font-size: 42px;
+        line-height: 1.2;
+        margin-bottom: 10px;
+    }
+    
+    .slogan {
+        align-self: center;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    
+    .hero-image {
+        width: 70%;
+        max-width: 450px;
+        margin: 20px auto;
+    }
+}
+
+@media screen and (max-width: 880px) {
+    .hero-content { width: 95%; }
+    .name { font-size: 38px; }
+    .hero-image {
+        width: 80%;
+        max-width: 400px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    /* Hero section */
+    .hero {
+        padding: 100px 5% 60px;
+    }
+    
+    .hero-content {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    
+    .name { font-size: 34px; }
+    .slogan { font-size: 20px; margin-bottom: 12px; }
+    
+    .hero-image {
+        width: 85%;
+        min-width: 280px;
+        max-width: 380px;
+        margin: 10px auto 15px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .hero-content { padding: 0 10px; }
+    .name { font-size: 30px; margin-bottom: 8px; }
+    .slogan { font-size: 18px; margin-bottom: 10px; }
+    
+    .quote {
+        font-size: 16px;
+        max-width: 90%;
+        margin: 0 auto 15px;
+        padding: 0 10px;
+    }
+    
+    .hero-image {
+        width: 90%;
+        min-width: 220px;
+        max-width: 300px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .hero {
+        padding-top: 90px;
+        padding-bottom: 50px;
+    }
+    
+    .name { font-size: 26px; }
+    .slogan { font-size: 16px; }
+    
+    .hero-image {
+        width: 95%;
+        min-width: 200px;
+        max-width: 260px;
+        margin: 5px auto 10px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .name { font-size: 24px; }
+    .quote { font-size: 14px; }
+}

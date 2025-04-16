@@ -33,3 +33,25 @@
     width: 50px;
     background-color: var(--secondary-color);
 }
+
+/* About Section Responsive Styles */
+@media screen and (max-width: 576px) {
+    /* About section */
+    .about { padding: 60px 20px; }
+    
+    .about-content h2 {
+        font-size: 36px;
+        text-align: center;
+    }
+    
+    .about-content p {
+        padding-left: 0;
+        text-align: center;
+    }
+    
+    .about-content p::before { display: none; }
+}
+
+@media screen and (max-width: 360px) {
+    .about-content h2 { font-size: 32px; }
+}

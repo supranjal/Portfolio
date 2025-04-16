@@ -52,3 +52,45 @@
     color: var(--secondary-color);
     transition: color 0.3s ease;
 }
+
+/* Skills Section Responsive Styles */
+@media screen and (max-width: 1200px) {
+    /* Skills section adjustment */
+    .skill-grid {
+        grid-template-columns: repeat(3, 1fr);
+        place-items: center;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    /* Skills section */
+    .skill-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    /* Skills section */
+    .skills-section {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    
+    .skills-section h2 { font-size: 36px; }
+    
+    .skill-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .skill-item {
+        width: 100%;
+        max-width: 250px;
+        height: 200px;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .skills-section h2 { font-size: 32px; }
+}

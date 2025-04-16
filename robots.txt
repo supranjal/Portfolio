@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://supranjalkhadka.com.np/sitemap.xml

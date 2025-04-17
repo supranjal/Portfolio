@@ -4,37 +4,60 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Page Not Found | Supranjal Khadka</title>
-  <link rel="stylesheet" href="css/main.css?v=1.2">
   <link rel="icon" href="./imgs/favicon.ico" type="image/x-icon">
   <meta name="robots" content="noindex">
   <style>
-    .error-container {
-      text-align: center;
-      padding: 100px 20px;
-      max-width: 800px;
-      margin: 0 auto;
+    body {
+      background-color: #f8f8f8; 
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
     }
     .error-code {
-      font-size: 120px;
-      margin-bottom: 20px;
-      color: #333;
+      color: #E63946;
+      font-size: clamp(80px, 15vw, 150px);
+      margin-top: 0;
+      font-weight: 700;
+      letter-spacing: -2px;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
     }
     .error-message {
-      font-size: 24px;
-      margin-bottom: 30px;
+      color: #333;
+      font-size: clamp(20px, 5vw, 32px);
+      margin: 0.5rem 0 1.5rem;
+      text-align: center;
+    }
+    p {
+      color: #666;
+      font-size: 18px;
+      line-height: 1.6;
+      max-width: 600px;
+      text-align: center;
+      margin-bottom: 2rem;
     }
     .home-button {
-      background-color: #333;
-      color: white;
-      padding: 12px 30px;
-      border: none;
-      border-radius: 4px;
+      padding: 12px 24px;
+      border-radius: 12px;
       cursor: pointer;
+      background-color: #E63946;
+      color: white;
+      border: none;
       font-size: 16px;
-      transition: background-color 0.3s;
+      font-weight: 500;
+      transition: all 0.3s ease;
     }
     .home-button:hover {
-      background-color: #555;
+      transform: scale(1.05);
+      box-shadow: 0 4px 12px rgba(230, 57, 70, 0.4);
+    }
+    .error-container {
+      padding: 2rem;
+      text-align: center;
+      max-width: 90%;
     }
   </style>
 </head>

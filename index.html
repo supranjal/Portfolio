@@ -200,6 +200,22 @@
           menuToggle.classList.remove('active');
         });
       });
+      
+      // Sanskrit text hover effect
+      const sanskritText = document.querySelector('.sanskrit');
+      const originalText = sanskritText.textContent;
+      
+      sanskritText.addEventListener('mouseenter', function() {
+        sanskritText.textContent = "I'm";
+        // Keep the same styling
+        sanskritText.style.fontFamily = "var(--font-primary)";
+        sanskritText.style.color = window.getComputedStyle(sanskritText).color;
+      });
+      
+      sanskritText.addEventListener('mouseleave', function() {
+        sanskritText.textContent = originalText;
+        sanskritText.style.fontFamily = "var(--font-hindi)";
+      });
     });
   </script>
 </body>

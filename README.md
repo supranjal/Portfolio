@@ -1,7 +1,7 @@
 # Supranjal Khadka | Personal Portfolio
 
 <div align="center">
-  <img src="./imgs/logo.png" alt="Supranjal Khadka Logo" width="200">
+  <img src="./imgs/l.png" alt="Supranjal Khadka Logo" width="200">
   <br>
   <a href="https://supranjalkhadka.com.np">
     <img src="https://img.shields.io/badge/Website-supranjalkhadka.com.np-E63946?style=for-the-badge" alt="Website Badge">

@@ -8,7 +8,7 @@
     align-items: center;
     font-family: var(--font-primary);
     padding: 0 8%; /* Increased side padding to match hero section */
-    background-color: rgba(52, 53, 58, 0.95);
+    background-color: rgba(52, 53, 58, 0.95); 
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     position: fixed;
     top: 0;
@@ -16,20 +16,35 @@
     z-index: 1000;
 }
 
-.logo { /* this is div for the image of logo so i can align things properly */
+.logo { 
     display: flex;
     align-items: center;
     cursor: pointer;
-    margin-left: 0;
-    margin-top: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1010; /* Higher than nav to ensure visibility */
+    height: auto; /* Let the height adjust to content */
+    padding-left: 15px; /* Add a bit of padding from the edge */
+    transition: all 0.4s ease;
 }
 
 .logo img {
-    height: 150px; 
-    width: auto; 
-    object-fit: contain;  
-    filter: brightness(1.2) contrast(1.1);
+    height: 121px; 
+    width: auto;
+    object-fit: contain;
+    filter: brightness(1.2) contrast(1.1) drop-shadow(0 0 5px rgba(255, 0, 0, 0.5)); 
+    transition: all 0.4s ease;
+    margin-top: -27px; /* Adjusted margin to center the image */
+    
 }
+
+.logo:hover img {
+    transform: scale(1.05) translateY(-2px);
+    filter: brightness(1.3) contrast(1.2) drop-shadow(0 0 8px rgba(255, 69, 0, 0.7)) ; 
+}
+
+
 
 .nav-links {
     display: flex;
@@ -131,10 +146,10 @@
 @media screen and (max-width: 768px) {
     /* Mobile Navigation */
     .nav {
-        height: 70px;
+        height: auto;
         padding: 0 5%;
         flex-wrap: wrap;
-        justify-content: space-between;
+        justify-content: space-around;
         position: fixed;
         overflow: hidden;
         transition: height 0.4s ease;
@@ -146,24 +161,34 @@
     }
     
     .logo {
+        position: relative;
+        top: 0px;
+        left: 0px;
+        height: auto;
         margin: 0;
-        height: 70px;
         display: flex;
         align-items: center;
+        margin-left: 0;
     }
     
     .logo img {
-        height: 110px;
+        height: 120px; /* Increased size for better visibility */
         width: auto;
+        margin-top: 0;
+        margin-left: 0;
     }
     
     /* Hamburger Menu */
     .menu-toggle {
         display: block;
         width: 30px;
-        height: 70px;
-        position: relative;
+        height: 30px;
+        position: absolute;
+        top: 50%; /* Center vertically relative to nav */
+        right: 20px;
+        transform: translateY(-50%);
         cursor: pointer;
+        z-index: 1020;
     }
     
     .menu-toggle::before {
@@ -172,8 +197,8 @@
         color: var(--text-color);
         position: absolute;
         top: 50%;
-        right: 0;
-        transform: translateY(-50%);
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
     
     .menu-toggle.active::before { content: "✕"; }
@@ -208,7 +233,9 @@
     /* Download button */
     .download-cv {
         order: 2;
-        margin: 0 10px 0 0;
+        margin: 0 auto 0 10px; 
+        display: flex;
+        justify-content: center;
     }
     
     .dwn-btn {
